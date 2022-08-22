@@ -1,0 +1,30 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    @include screen-size(not-desktop) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &--no-padding-top {
+        padding-top: 0;
+        padding-bottom: 94px;
+        @include screen-size(not-desktop) {
+            display: none;
+        }
+    }
+    &--background-grey {
+        background-color: var(--secondary-background-color);
+    }
+}
+
+.section__title {
+    margin-bottom: 30px;
+    @include Fonts(700, 28px, 1.17);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    @include screen-size(desktop) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+}
