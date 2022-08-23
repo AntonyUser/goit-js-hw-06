@@ -4,8 +4,8 @@
 const formEl = document.querySelector('.login-form');
 const inputEmail = document.querySelector('input[name="email"]');
 const inputPassword = document.querySelector('input[name="password"]');
-console.log(inputEmail);
-console.log(inputPassword);
+// console.log(inputEmail);
+// console.log(inputPassword);
 formEl.addEventListener('submit', (event) => {
     event.preventDefault();
     if (inputEmail.value.length === 0 || inputPassword.value.length === 0) {
@@ -14,7 +14,7 @@ formEl.addEventListener('submit', (event) => {
     const {
         elements: { email, password }
     } = event.currentTarget;
-    console.log(email.value, password.value);
+    // console.log(email.value, password.value);
     // console.log(event.currentTarget.elements);
     const formData = new FormData(event.currentTarget);
     formData.forEach((email, password) => {
